@@ -1,0 +1,6 @@
+groq
+flask
+flask-limiter
+python-dotenv
+ddgs
+gunicorn

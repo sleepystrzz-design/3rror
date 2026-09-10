@@ -1,0 +1,18 @@
+# Render blueprint — https://render.com
+# In the Render dashboard: New + -> Blueprint -> pick this repo.
+# Then set the GROQ_API_KEY value (and optionally APP_PASSWORD) when prompted.
+services:
+  - type: web
+    name: 3rror
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 1 --threads 8 --timeout 120 web:app
+    healthCheckPath: /healthz
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false          # you paste this in the dashboard (never commit it)
+      - key: APP_PASSWORD
+        sync: false          # optional: a shared password for visitors
+      - key: PYTHON_VERSION
+        value: "3.12.10"
