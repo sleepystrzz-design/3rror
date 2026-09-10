@@ -7,7 +7,7 @@ services:
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn --workers 1 --threads 8 --timeout 120 web:app
+    startCommand: gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 120 web:app
     healthCheckPath: /healthz
     envVars:
       - key: GROQ_API_KEY
