@@ -40,13 +40,18 @@ What it can do:
 |---|---|
 | **Persona** dropdown | Assistant · Engineer · Tutor · Brainstorm · Devil's Advocate · Briefing |
 | **🌐 web** | Live web search (DuckDuckGo) — answers cite numbered sources |
-| **🔊 voice** | Reads replies aloud (your browser's built-in speech) |
+| **🔊 speak** | Reads replies aloud, then pick a voice under **Settings** |
 | **🎙 mic** | Speak instead of type — transcribed by Groq's free Whisper |
 | **🔊 + 🎙 together** | Hands-free: it listens, answers, speaks, listens again. Press Esc to stop. |
-| Model / HUE / SFX | Pick the model, switch cyan/amber, mute the UI blips |
+| **Settings** | Model, voice, appearance (Nebula / Dawn), interface sounds |
 
-The first time you use the mic, allow microphone permission. Voice features
-need Chrome, Edge, or Firefox.
+The first time you use the mic, allow microphone permission. Voice needs
+Chrome, Edge, or Firefox.
+
+**For the best-sounding voice:** open the app in **Microsoft Edge** — it has
+free "Natural" AI voices (Aria, Guy, …) that sound modern. Chrome only has the
+older robotic system voices unless you install more from Windows Settings →
+Time & language → Speech.
 
 **Command line:**
 
